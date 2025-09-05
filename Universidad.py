@@ -56,6 +56,7 @@ class universidad:
     def set_Vision(self, Vision):
         self.Vision = Vision
 
+    # Metodo para mostrar la informacion de la universidad
     def mostrar_docentes(self):
         for docente in self.lista_docentes:
             print(docente.mostrar_info())
@@ -66,4 +67,3 @@ class universidad:
         for facultad in self.lista_facultades:
             print(facultad.mostrar_info())
 
-            
