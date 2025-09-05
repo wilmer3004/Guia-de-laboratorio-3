@@ -1,6 +1,6 @@
 from persona import Persona
 class Estudiante(Persona):
-    def __init__(self,nro_id, tipo_id, nombres, apellidos, direccion, telefono, email, rh, carrera, codigo_estudiante, semestre, facultad, valor_matricula, pago_matricula = False):
+    def __init__(self,nro_id,nro_Matricula, tipo_id, nombres, apellidos, direccion, telefono, email, rh, carrera, codigo_estudiante, semestre, facultad, valor_matricula, pago_matricula = False):
         super().__init__(nro_id, tipo_id, nombres, apellidos, direccion, telefono, email, rh)
         self.__carrera = carrera
         self.__codigo_estudiante = codigo_estudiante
@@ -21,6 +21,10 @@ class Estudiante(Persona):
     
     def get_facultad(self):
         return self.__facultad
+    def get_valor_matricula(self):
+        return self.__valor_matricula
+    def get_pago_matricula(self):
+        return self.__pago_matricula
     
     # Metodos setters
     def set_carrera(self, carrera):
@@ -34,6 +38,11 @@ class Estudiante(Persona):
     
     def set_facultad(self, facultad):
         self.__facultad = facultad
+    def set_valor_matricula(self, valor_matricula):
+        self.__valor_matricula = valor_matricula
+    def set_pago_matricula(self, pago_matricula):
+        self.__pago_matricula = pago_matricula
+
     
     
     # Metodo de pago de matricula

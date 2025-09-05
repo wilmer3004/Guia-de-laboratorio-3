@@ -2,9 +2,9 @@ from persona import Persona
 
 class Docente(Persona):
     # Metodo constructor 
-    def __init__(self, Antiguedad, ranking, facultad, area, meritos, nro_id, tipo_id, nombres, apellidos, direccion, telefono, email, rh):
+    def __init__(self, Antigüedad, ranking, facultad, area, meritos, nro_id, tipo_id, nombres, apellidos, direccion, telefono, email, rh):
         super().__init__(nro_id, tipo_id, nombres, apellidos, direccion, telefono, email, rh)
-        self.__Antiguedad = Antiguedad
+        self.__Antigüedad = Antigüedad
         self.__ranking = ranking
         self.__facultad = facultad
         self.__area = area
